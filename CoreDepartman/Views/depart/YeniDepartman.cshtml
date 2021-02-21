@@ -1,0 +1,18 @@
+﻿@model CoreDepartman.Models.departmanlar
+@{
+    ViewData["Title"] = "YeniDepartman";
+    Layout = "~/Views/Shared/_TestLayout.cshtml";
+}
+
+<h1>YeniDepartman</h1>
+
+<form class="form-group" method="post">
+    <div>
+        <label>Departman Adı</label><br />
+        @Html.TextBoxFor(x => x.departmanad, new { @class = "form-control" }) 
+    </div>
+    <br />
+    <div>
+        <button class="btn btn-primary">Departman Ekle</button>
+    </div>
+</form>
